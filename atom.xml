@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.yhzdys.com</id>
+    <title>yhzdys&apos;s·notes</title>
+    <updated>2022-06-24T15:14:42.941Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.yhzdys.com"/>
+    <link rel="self" href="https://blog.yhzdys.com/atom.xml"/>
+    <subtitle>yhzdys,杜恒</subtitle>
+    <logo>https://blog.yhzdys.com/images/avatar.png</logo>
+    <icon>https://blog.yhzdys.com/favicon.ico</icon>
+    <rights>All rights reserved 2022, yhzdys&apos;s·notes</rights>
+    <entry>
+        <title type="html"><![CDATA[加权随机算法]]></title>
+        <id>https://blog.yhzdys.com/post/220508133607/</id>
+        <link href="https://blog.yhzdys.com/post/220508133607/">
+        </link>
+        <updated>2022-05-08T05:36:07.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>给上一篇博文填个坑，讲解下负载均衡算法中最常见的加权随机算法</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>给上一篇博文填个坑，讲解下负载均衡算法中最常见的加权随机算法</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[加权轮询算法]]></title>
+        <id>https://blog.yhzdys.com/post/220304224140/</id>
+        <link href="https://blog.yhzdys.com/post/220304224140/">
+        </link>
+        <updated>2022-03-04T14:41:40.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>前几天参加某公司面试，被问到Dubbo的负载均衡算法实现，由于电话面试无法画图详解，不才小生简单口头描述后，换来面试官一句“没这么复杂吧”（...）。于是写下此篇文章，详细介绍下Dubbo框架中负载均衡的加权轮训算法实现。后续如果有闲情的话，再完善其余的算法实现（大概）</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>前几天参加某公司面试，被问到Dubbo的负载均衡算法实现，由于电话面试无法画图详解，不才小生简单口头描述后，换来面试官一句“没这么复杂吧”（...）。于是写下此篇文章，详细介绍下Dubbo框架中负载均衡的加权轮训算法实现。后续如果有闲情的话，再完善其余的算法实现（大概）</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dubbo SPI]]></title>
+        <id>https://blog.yhzdys.com/post/211027212445/</id>
+        <link href="https://blog.yhzdys.com/post/211027212445/">
+        </link>
+        <updated>2021-10-27T13:24:45.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>SPI 全称为 Service Provider Interface，是一种服务发现机制。SPI 的本质是将接口实现类的全限定名配置在文件中，并由服务加载器读取配置文件，加载实现类。这样可以在运行时，动态为接口替换实现类。正因此特性，我们可以很容易的通过 SPI 机制为我们的程序提供拓展功能。SPI 机制在第三方框架中也有所应用，比如 Dubbo 就是通过 SPI 机制加载所有的组件。不过，Dubbo 并未使用 java 原生的 SPI 机制，而是对其进行了增强，使其能够更好的满足需求。在 Dubbo 中，SPI 是一个非常重要的模块。基于 SPI，我们可以很容易的对 Dubbo 进行拓展。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>SPI 全称为 Service Provider Interface，是一种服务发现机制。SPI 的本质是将接口实现类的全限定名配置在文件中，并由服务加载器读取配置文件，加载实现类。这样可以在运行时，动态为接口替换实现类。正因此特性，我们可以很容易的通过 SPI 机制为我们的程序提供拓展功能。SPI 机制在第三方框架中也有所应用，比如 Dubbo 就是通过 SPI 机制加载所有的组件。不过，Dubbo 并未使用 java 原生的 SPI 机制，而是对其进行了增强，使其能够更好的满足需求。在 Dubbo 中，SPI 是一个非常重要的模块。基于 SPI，我们可以很容易的对 Dubbo 进行拓展。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[滑动时间窗算法]]></title>
+        <id>https://blog.yhzdys.com/post/191003205847/</id>
+        <link href="https://blog.yhzdys.com/post/191003205847/">
+        </link>
+        <updated>2019-10-03T12:58:47.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>滑动时间窗算法通常被用于系统限流，限流的目的是通过对并发访问/请求进行限速，或者对一个时间段内的请求进行限速来保护系统，一旦达到限制速率程序可以进行拒绝、等待或降级等操作。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>滑动时间窗算法通常被用于系统限流，限流的目的是通过对并发访问/请求进行限速，或者对一个时间段内的请求进行限速来保护系统，一旦达到限制速率程序可以进行拒绝、等待或降级等操作。</p>
+</blockquote>
+]]></content>
+    </entry>
+</feed>
